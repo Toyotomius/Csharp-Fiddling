@@ -33,4 +33,4 @@ namespace SillyBenchmark
         }
     }
 }
-// Execution Time: ~325 ms. When published as exe.
+// Execution Time: ~305 ms. When published as exe & run from cmd.
