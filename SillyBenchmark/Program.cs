@@ -7,11 +7,11 @@ namespace SillyBenchmark
 {
     internal class Program
     {
-        
+
 
         private static void Main()
         {
-        var watch = new System.Diagnostics.Stopwatch();
+            var watch = new System.Diagnostics.Stopwatch();
 
             watch.Start();
 
@@ -21,8 +21,8 @@ namespace SillyBenchmark
             var tasks = new List<Task>();
             for (int i = 0; i < 30; i++)
             {
-                tasks.Add( Task.Run(() => lotto649.L649Async()));
-                tasks.Add( Task.Run(() => lottoExample.LEAsync()));
+                tasks.Add(Task.Run(() => lotto649.L649Async()));
+                tasks.Add(Task.Run(() => lottoExample.LEAsync()));
             }
 
             var t = Task.WhenAll(tasks);
@@ -33,4 +33,4 @@ namespace SillyBenchmark
         }
     }
 }
-// Execution Time: 500 ms
+// Execution Time: ~325 ms. When published as exe.
