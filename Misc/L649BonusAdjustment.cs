@@ -48,7 +48,7 @@ namespace Misc
                 if (Regex.IsMatch(lottoFile[x], regexPattern) && x <= 44401)
                 {
                     y = (x - 1) / 12;
-                    // Using notepad++ I determined that there would be a consistent 12 index gap between matches.
+                    // Using notepad++ I determined that there would be a consistent 12 index gap between matches starting at line 13.(Index 12)
                     // The equation for this is y = 12x+1. Solve for x is (y-1)/12. Subbed normal index variables (i, y, etc) for math logic.
                     var str = $"],\n      \"Bonus\" : {bonus[y] }";
                     sb.Append(reg.Replace(lottoFile[x], str));
