@@ -16,7 +16,7 @@ namespace Misc
         /// Probably inefficient and terrible but I was annoyed and this worked.
         /// </summary>
         /// <param name="args"></param>
-        private static void BonusAdjustment()
+        public static void BonusAdjustment()
         {
             string json;
 
@@ -43,13 +43,13 @@ namespace Misc
             var y = 0;
 
             for (var x = 0; x < lottoFile.Length; x++)
-            {                                                       // Just a one off script. This magic number represents the last ] in the json file
-                                                                    // which doesn't need to be matched and will be out of index range for bonus list.
-                if (Regex.IsMatch(lottoFile[x], regexPattern) && x <= 44401)
+            {
+                if (Regex.IsMatch(lottoFile[x], regexPattern))
                 {
-                    y = (x - 1) / 12;
-                    // Using notepad++ I determined that there would be a consistent 12 index gap between matches.
+                    y = (x / 12) - 1;
+                    // Using notepad++ I determined that there would be a consistent 12 index gap between matches starting at line 13.
                     // The equation for this is y = 12x+1. Solve for x is (y-1)/12. Subbed normal index variables (i, y, etc) for math logic.
+                    // Because programming index starts at 0, the adjusted equation is (x/12)-1.
                     var str = $"],\n      \"Bonus\" : {bonus[y] }";
                     sb.Append(reg.Replace(lottoFile[x], str));
                 }

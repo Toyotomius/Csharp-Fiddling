@@ -13,6 +13,7 @@ namespace Misc
     {
         private static void Main(string[] args)
         {
+            L649BonusAdjustment.BonusAdjustment();
         }
     }
 }
