@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SillyBenchmark", "SillyBenchmark\SillyBenchmark.csproj", "{C1F4C563-898A-472D-89F6-4E6DB94481E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lottery Regex", "Lottery Regex\Lottery Regex.csproj", "{902D1A34-D5D6-4C7A-A4BC-972E84678A03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lottery Regex", "Lottery Regex\Lottery Regex.csproj", "{902D1A34-D5D6-4C7A-A4BC-972E84678A03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misc", "Misc\Misc.csproj", "{7477D43D-CCCA-4CE3-944C-84526AD7649D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{902D1A34-D5D6-4C7A-A4BC-972E84678A03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{902D1A34-D5D6-4C7A-A4BC-972E84678A03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{902D1A34-D5D6-4C7A-A4BC-972E84678A03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7477D43D-CCCA-4CE3-944C-84526AD7649D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7477D43D-CCCA-4CE3-944C-84526AD7649D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7477D43D-CCCA-4CE3-944C-84526AD7649D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7477D43D-CCCA-4CE3-944C-84526AD7649D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
