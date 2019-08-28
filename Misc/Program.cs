@@ -13,7 +13,8 @@ namespace Misc
     {
         private static void Main(string[] args)
         {
-            L649BonusAdjustment.BonusAdjustment();
+            var thing = new LottoMaxJsonCreation();
+            thing.CreateJson();
         }
     }
 }
