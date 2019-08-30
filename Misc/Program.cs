@@ -13,7 +13,7 @@ namespace Misc
     {
         private static void Main(string[] args)
         {
-            var thing = new LottoMaxJsonCreation();
+            var thing = new USPowerballJsonCreation();
             thing.CreateJson();
         }
     }
